@@ -14,7 +14,7 @@ app.set('view engine', 'ejs') //establecer nueva configuración (html con caract
 app.use(indexRoutes)
 
 app.use(express.static(join(__dirname, 'public')))
-app.listen(3000) //especificarle en que puerto va a estar escuchando la app
+app.listen(process.env.PORT || 3000) //especificarle en que puerto va a estar escuchando la app
 
 
 
